@@ -89,7 +89,8 @@
 
 *실제 gpt 화면
 
-![Desktop-2024 02 15-17 07 29 07 DVR-Trim](https://github.com/YooJi3un/HomePT/assets/75007766/00991661-bf5b-4a65-ba19-31c9e6523f7a)
+![Desktop-2024 02 15-17 07 29 07 DVR-Trim_out](https://github.com/YooJi3un/HomePT/assets/75007766/a222d12f-a938-4671-a168-bcd9894bf89c)
+
 
 * 과업
     * 로그인 기능
