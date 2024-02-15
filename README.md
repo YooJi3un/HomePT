@@ -93,7 +93,7 @@
 
 * 현재까지 구현 된 화면
 
-  ![realimg1](https://github.com/YooJi3un/HomePT/assets/75007766/11c637e7-c3db-411f-8a80-a46dfc8754a9)
+  ![realimg1](https://github.com/YooJi3un/HomePT/assets/75007766/c8a3f9b8-9a7e-4a87-93ae-cca6db6e6648)
 
   ![realimg2](https://github.com/YooJi3un/HomePT/assets/75007766/7c4503ab-50a2-4ee3-8db7-11246f88af13)
 
