@@ -50,29 +50,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
-
-document.querySelectorAll('.like-icon').forEach(icon => {
-    icon.addEventListener('click', function() {
-        this.classList.toggle('fa-regular');
-        this.classList.toggle('fa-solid');
-
-        // 영상 ID를 기반으로 좋아요 상태를 저장
-        const videoId = this.getAttribute('data-video-id');
-        if (this.classList.contains('fa-solid')) {
-            localStorage.setItem(videoId, 'liked');
-        } else {
-            localStorage.removeItem(videoId);
-        }
-    });
-});
-
-// 페이지 로드 시, 저장된 좋아요 상태를 불러와서 적용
-document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('.like-icon').forEach(icon => {
-        const videoId = icon.getAttribute('data-video-id');
-        if (localStorage.getItem(videoId) === 'liked') {
-            icon.classList.remove('fa-regular');
-            icon.classList.add('fa-solid');
-        }
-    });
-});

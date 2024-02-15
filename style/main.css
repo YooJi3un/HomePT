@@ -50,6 +50,7 @@ body, html {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    height: 70%;
 }
 
 #my-exercises, #GPT {
@@ -71,12 +72,12 @@ body, html {
 }
 
 #my-exercises h2, #GPT h2, #recom h2 {
-    position: absolute; /* 절대 위치 설정 */
-    top: -15px; /* 컨테이너 상단 경계선에 걸치도록 조정 */
-    left: 15px; /* 좌측 경계로부터의 거리 */
-    background-color: white; /* 배경색 설정 */
-    padding: 0 10px; /* 좌우 패딩 */
-    margin: 0; /* 기본 마진 제거 */
+    position: absolute;
+    top: -15px;
+    left: 15px;
+    background-color: white;
+    padding: 0 10px;
+    margin: 0;
 }
 
 .input-group, #exercise-list {
@@ -111,7 +112,7 @@ body, html {
 }
 #GPT{
     width: 200px;
-    height: 300px;
+    height: 591px;
     display: flex;
     flex-direction: column;
     border: 1px solid #ccc;
@@ -142,19 +143,19 @@ body, html {
 }
 
 .input-group {
-    display: flex; /* 이 컨테이너 내 요소들을 가로로 배치 */
-    margin-bottom: 10px; /* 필요한 경우 추가 버튼 밑에 여백 추가 */
+    display: flex;
+    margin-bottom: 10px;
 }
 
 /*유튜브 영상*/
 .video-container {
     display: flex;
-    justify-content: center; /* 중앙 정렬 */
+    justify-content: center; 
     flex-wrap: wrap; /* 영상이 많아질 경우 다음 줄로 넘김 */
     gap: 20px; /* 영상 사이의 간격 */
 }
 
 .video-container iframe {
-    width: 560px; /* 영상 너비 */
-    height: 315px; /* 영상 높이 */
+    width: 560px;
+    height: 315px;
 }
