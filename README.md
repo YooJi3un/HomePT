@@ -72,7 +72,7 @@
         </tr>
         <tr width="70%">
             <td width="70%">
-               <img src="style/img/login_be.jpg">
+               <img src="style/img/login_af.jpg">
             </td>
             <td>
                 <ul>
