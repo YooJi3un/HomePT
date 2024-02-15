@@ -87,6 +87,10 @@
         </tr>
     </table>
 
+*실제 gpt 화면
+
+![Desktop-2024 02 15-17 07 29 07 DVR-Trim](https://github.com/YooJi3un/HomePT/assets/75007766/00991661-bf5b-4a65-ba19-31c9e6523f7a)
+
 * 과업
     * 로그인 기능
     * 추천 운동 목록 6개씩 잘라내어 부드럽게 넘기기
