@@ -32,8 +32,8 @@
     | 폴더명 | 파일명 | 함수 | 변수 | 비고 |
     |--------|--------|------|------|------|
     | style  | main.css | | | 전반적인 디자인 설정 |
-    | JS     | main.js | addExercise() | | 체크박스 이벤트, 삭제시 물어보는 알림 |
-    | JS     | gpt.js | addMessage(), fetchAIResponse() | chatMessages, userInput, sendButton, inputdata | gpt를 연결, 원하는 값 받아오기 |
+    |      | main.js | addExercise() | | 체크박스 이벤트, 삭제시 물어보는 알림 |
+    |      | gpt.js | addMessage(), fetchAIResponse() | chatMessages, userInput, sendButton, inputdata | gpt를 연결, 원하는 값 받아오기 |
 
 * WBS
 
