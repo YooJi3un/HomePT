@@ -52,8 +52,7 @@
         </tr>
         <tr>
             <td width="70%">
-                ![HomePT  main(로그인 전)](https://github.com/YooJi3un/HomePT/assets/75007766/398b5377-d3bf-4a40-bb38-89d094686ff4)
-
+                <img src="style/img/login_be.jpg">
             </td>
             <td>
                 <ul>
@@ -73,7 +72,7 @@
         </tr>
         <tr width="70%">
             <td width="70%">
-                ![HomePT  main(로그인 후)](https://github.com/YooJi3un/HomePT/assets/75007766/7e689f81-8c46-4b72-8786-41de14771c21)
+               <img src="style/img/login_be.jpg">
             </td>
             <td>
                 <ul>
