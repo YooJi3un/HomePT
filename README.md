@@ -87,9 +87,18 @@
         </tr>
     </table>
 
-*실제 gpt 화면
+*<strong>실제 gpt 작동 화면</strong>
 
 ![Desktop-2024 02 15-17 07 29 07 DVR-Trim_out](https://github.com/YooJi3un/HomePT/assets/75007766/a222d12f-a938-4671-a168-bcd9894bf89c)
+
+* 현재까지 구현 된 화면
+
+  ![realimg1](https://github.com/YooJi3un/HomePT/assets/75007766/11c637e7-c3db-411f-8a80-a46dfc8754a9)
+
+  ![realimg2](https://github.com/YooJi3un/HomePT/assets/75007766/7c4503ab-50a2-4ee3-8db7-11246f88af13)
+
+  ![realimg3](https://github.com/YooJi3un/HomePT/assets/75007766/78e94b06-e168-415e-9c47-905033884426)
+
 
 
 * 과업
