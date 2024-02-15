@@ -1,0 +1,160 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+.background-image {
+    background-image: url('img/main.jpg'); /* 배경 이미지 URL */
+    height: 60%;
+    opacity: 95%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.transparent-menu-bar {
+    background: rgba(0, 0, 0, 0.5); /* 메뉴 바 배경을 반투명으로 설정 */
+    padding: 10px 0;
+    position: static;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.transparent-menu-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around; /* 양쪽 끝으로 항목 정렬 */
+}
+
+.transparent-menu-bar ul li a {
+    display: block;
+    color: white; /* 메뉴 항목 색상 */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.transparent-menu-bar ul li a:hover {
+    color: #00aeff; /* 호버 시 메뉴 텍스트 색상을 변경합니다. */
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#my-exercises, #GPT {
+    position: relative;
+    flex-basis: 45%; /* 각 박스가 컨테이너 너비의 45%를 차지하도록 설정 */
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#recom {
+    position: relative;
+    flex-basis: 95%;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#my-exercises h2, #GPT h2, #recom h2 {
+    position: absolute; /* 절대 위치 설정 */
+    top: -15px; /* 컨테이너 상단 경계선에 걸치도록 조정 */
+    left: 15px; /* 좌측 경계로부터의 거리 */
+    background-color: white; /* 배경색 설정 */
+    padding: 0 10px; /* 좌우 패딩 */
+    margin: 0; /* 기본 마진 제거 */
+}
+
+.input-group, #exercise-list {
+    width: 100%; /* 전체 너비 사용 */
+}
+
+#exercise-list{
+    list-style-type: none;
+    margin-left: 0;
+    padding: 10px;
+    align-items: center;
+}
+
+#exercise-list li input[type="checkbox"] {
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.checked {
+    text-decoration: line-through;
+    color: lightgray;
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+}
+
+.message {
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #e6e6e6;
+}
+#GPT{
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+}
+#chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+#userInput {
+    display: flex;
+    padding: 10px;
+
+}
+#userInput input, #exercise-input {
+    flex: 1;
+    padding: 10px;
+    outline: none;
+}
+#userInput button, #add-button {
+    border: none;
+    background-color: #1e88e5;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.input-group {
+    display: flex; /* 이 컨테이너 내 요소들을 가로로 배치 */
+    margin-bottom: 10px; /* 필요한 경우 추가 버튼 밑에 여백 추가 */
+}
+
+/*유튜브 영상*/
+.video-container {
+    display: flex;
+    justify-content: center; /* 중앙 정렬 */
+    flex-wrap: wrap; /* 영상이 많아질 경우 다음 줄로 넘김 */
+    gap: 20px; /* 영상 사이의 간격 */
+}
+
+.video-container iframe {
+    width: 560px; /* 영상 너비 */
+    height: 315px; /* 영상 높이 */
+}
