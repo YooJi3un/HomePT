@@ -1,60 +1,60 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HomePT</title>
+        <link rel="stylesheet" href="style/main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    </head>
 <body>
-    <div class="container">
-        <form>
-            <input type="text">
-            <button type="submit">질문하기!</button>
-        </form>
-        <div class="answer"></div>
+    <div class="background-image">
+        <div class="transparent-menu-bar">
+            <ul>
+                <li><a href="main.html">HomePT</a></li>
+                <li><a href="#my-exercises">나의 운동</a></li>
+                <li><a href="#GPT">GPT 추천 루틴</a></li>
+                <li><a href="#recom">추천 운동</a></li>
+            </ul>
+        </div>
     </div>
-    <script>
-        const $input = document.querySelector('input')
-        const $button = document.querySelector('button')
-        const $answer = document.querySelector('.answer')
-
-        const data = []
-        data.push({
-            "role": "system",
-            "content": "assistant는 점시간 메뉴를 추천해주는 요리사입니다."
-        })
-
-        const url = `https://open-api.jejucodingcamp.workers.dev/`
-        
-        $button.addEventListener('click', e => {
-            e.preventDefault()
-            const contents = $input.value
-            data.push({
-                "role": "user",
-                "content": contents
-            })
-            $input.value = ''
-
-            chatGPTAPI()
-        })
-
-        function chatGPTAPI() {
-            fetch(url, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(data),
-                redirect: 'follow'
-            })
-            .then(res => res.json())
-            .then(res => {
-                console.log(res)
-                // 답변 온 것을 assistant로 저장
-                $answer.innerHTML = `<p>${res.choices[0].message.content}</p>`
-            })
-        }
-    </script>
+    <br><br>
+        <div class="container">
+            <div id="my-exercises">
+                <h2>나의 운동</h2><br>
+                <div class="input-group">
+                    <input type="text" id="exercise-input" placeholder="운동 추가..."/>
+                    <button onclick="addExercise()" id="add-button">추가</button>
+                </div><br>
+                <strong>[운동 목록]</strong>
+                <ul id="exercise-list"></ul>
+            </div>
+            <div id="GPT">
+                <h2>GPT 추천 루틴</h2><br><br>
+                <div id="chat-messages"></div>
+                <div id="userInput">
+                    <input id="userInput_value" type="text" placeholder="ex. 초심자용 일주일 운동 루틴을 짜줘">
+                    <button>질문하기</button>
+                </div>
+            </div>
+        </div>
+    <script src="./main.js"></script>
+    <script src="./gpt.js"></script>
+    <div class="container">
+        <div id="recom">
+            <h2>추천 운동</h2><br><br>
+            <div class="video-container">
+                    <iframe width="1280" height="720" src="https://www.youtube.com/embed/gMaB-fG4u4g" title="전신 다이어트 최고의 운동 [칼소폭 찐 핵핵매운맛]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <i class="fa-regular fa-heart like-icon" data-video-id="VIDEO_ID_1"></i>
+                    <iframe width="1280" height="720" src="https://www.youtube.com/embed/T-bVqdhqW2U" title="🔥출렁이는 팔뚝살🔥빨리 빼려면 1달만 이 루틴하세요. (팔뚝살빼는운동/팔뚝살 빨리 빼는법/팔뚝살 완전 제거 운동)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <i class="fa-regular fa-heart like-icon" data-video-id="VIDEO_ID_2"></i>
+                    <iframe width="1280" height="720" src="https://www.youtube.com/embed/myNjmnvI6x0" title="NO 층간소음 올인원 운동 - 40분 유산소운동 홈트 - 관절에 무리없이 체지방 태우기" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe width="1280" height="720" src="https://www.youtube.com/embed/4AU4kY4CAio" title="전적으로 저를 믿고 따라오시면 체중감량을 무조건 약속드리는 아갈머리 전신유산소 / NO SQUAT, NO LUNGE, NO JUMP AEROBIC WORKOUT" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe width="1280" height="720" src="https://www.youtube.com/embed/jw1gxrzRgeU" title="[ENG] 왜, 스트레칭만 하고 싶은 그런 날 있잖아요..🥹ㅣ25분 심으뜸 전신 스트레칭" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe width="1280" height="720" src="https://www.youtube.com/embed/CYcLODSeC-c" title="Lv.4 층간소음없이 딱! 15분 체지방 100% 녹여버리는 루틴  [Noise Free 15mins Fat Burning Workout]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <!-- 더 많은 영상 추가 가능 -->
+            </div>
+        </div>
 </body>
 </html>
