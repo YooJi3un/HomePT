@@ -27,10 +27,6 @@
 * 구조
 ![mer](https://github.com/YooJi3un/HomePT/assets/75007766/82d53e8c-dc66-4531-8213-707dbbd3a966)
 
-* 중요 의사결정
-    * 서비스 고도화에 따라 의사결정이 필요한 부분 정리
-        * local_blogList.json과 local_blogMenu.json를 사용자에게 작성하게 하면 무제한으로 API를 활용할 수 있음
-
 * 폴더 트리
 
     | 폴더명 | 파일명 | 함수 | 변수 | 비고 |
